@@ -1,0 +1,190 @@
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{enumitem}
+\setlist{nosep}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \text{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubskill}[4]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small #1 \\
+      \small #2 \\
+      \small #3 
+      \small #4 
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEndNoSpace}{\end{itemize}}
+
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://github.com/grojoja/}{\Large Joseph Vo}} & Email: \href{mailto:josephvo@berkeley.edu}{josephvo@berkeley.edu}\\
+  \href{http://github.com/grojoja/}{http://github.com/grojoja} & Mobile: \href{tel:+14084765018}{+1-408-476-5018} \\
+\end{tabular*}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Berkeley}{Berkeley, CA}
+      {Bachelor of Art in Computer Science and Data Science}{Expected Graduation: Dec 2024}
+    \resumeSubheading
+      {De Anza College}{Cupertino, CA}
+      {Associate's Degrees in Math and Computer Science}{Sept. 2020 - Aug. 2022}
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+\section{Skills}
+  \resumeItemListStart
+    \setlength\itemsep{0em}
+    \item {Languages: Go, Java, C++, Python, SQL, Assembly, HTML/CSS, R, Ruby, JavaScript, LaTeX}
+    \item {Libraries: pandas, NumPy, Matplotlib, Sci-kit Learn, TensorFlow}
+    \item {Frameworks: React, Node.js, JUnit, MongoDB, NoSQL}
+    \item {Developer Tools: Git, VS Code, IntelliJ, Google Cloud Platform, R Studio, Heroku}
+    \item {Workflow: Jira, Atlassian, Okta, Confluence}
+  \resumeItemListEnd
+\section{Projects}
+    \begin{itemize}
+      \setlength\itemsep{0em}
+      \item {Cryptographically Secure File-Sharing Application}
+      \resumeItemListStart
+        \setlength\itemsep{-0.25em}
+        \item {Collaborated with a partner to allow users to create, edit, and share files}
+        \item {Developed sharing, revoking, upload, and download features}
+        \item {Files were cryptographically secured to detect any malicious activity}
+        \item {Encrypted using symmetric encryption (AES-CTR), asymmetric encryption (RSA), hash-based MACs, signatures, and certificates}
+      \resumeItemListEnd
+    \end{itemize}
+    \vspace{5pt}
+    \begin{itemize}
+        \item {Interactive 2D Game}
+        \resumeItemListStart
+            \item {Developed a 2D grid survival game with multiplayer interactivity in Java}
+            \item {Implemented pseudorandomly seed generated worlds with hallways and rooms}
+            \item {Programmed saving and loading options to allow users to resume where they left off}
+      \resumeItemListEnd
+    \end{itemize}
+    \vspace{5pt}
+    \begin{itemize}
+        \item {Wordnet}
+        \resumeItemListStart
+            \item {Designed an interactive database of word relations using graphs and hashmaps in Java}
+            \item {Parsed through data files to establish relations between words and connect them in the graph}
+            \item {Allowed for multi-word inputs, output of N words based on frequency and count, and overlap of word relations}
+      \resumeItemListEnd
+    \end{itemize}
+    \vspace{5pt}
+    \begin{itemize}
+        \item {RottenPotatoes}
+        \resumeItemListStart
+            \item {Built a RottenTomatoes copycat using Ruby, HTML, CSS, and SinatraProgrammed checkboxes to allow for MPA film ratings}
+            \item {Implemented sorting by director, release date, and rating}
+            \item {Allowed users to edit descriptions and data about the movies with interactive buttons}
+      \resumeItemListEnd
+    \end{itemize}
+      
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bay Area Community Resources}{San Jose, CA}
+      {Public Health Intern}{Jan 2021 - Jan 2022}
+      \vspace{-0.25pt}
+      \resumeItemListStart
+        \item {Arranged meetings with local leaders to advocate for anti-smoking policies on community college campuses}
+        \item {Successfully passed a smoking ban on De Anza College Campus after a year of lobbying}
+      \resumeItemListEnd
+    \vspace{5pt}
+    \resumeSubheading
+      {California Native Plant Society}{San Jose, CA}
+      {Treasurer}{May 2020 - Oct 2022}
+      \vspace{1pt}
+      \resumeItemListStart
+        \item {Served as a board member of the Santa Clara Valley Chapter}
+        \item {Generated quarterly financial statements and categorized transactions using QuickBooks}
+    \resumeSubHeadingListEnd
+    \resumeSubheading
+      {Esper}{San Jose, CA}
+      {Administrative Assistant}{March 2022 - July 2022}
+      \vspace{1pt}
+      \resumeItemListStart
+        \item {Automated COVID-19 test sign-ins using Google Forms}
+        \item {Scraped data from travel websites to generate average flight and hotel prices for Bellevue, WA and San Jose, CA}
+        \item {Performed weekly inventory of office supplies and input into a living inventory document}
+    \resumeSubHeadingListEnd
+\end{document}
